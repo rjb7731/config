@@ -2,6 +2,10 @@
 set number
 set novisualbell
 
+"cursor
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 "plugins
 call plug#begin('~/.vim/plugged')
 Plug 'itchyny/lightline.vim'
